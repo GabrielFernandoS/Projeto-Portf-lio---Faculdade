@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio — Programador & Analista de Sistemas e Redes" />
+  <title>Gabriel Fernando — Portfólio</title>
+
+  <!-- Fontes Google: Inter (UI) + Instrument Serif (display itálico nos destaques) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Favicon: círculo com gradiente do accent -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%234f46e5'/%3E%3Cstop offset='1' stop-color='%23c084fc'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='8' cy='8' r='7' fill='url(%23g)'/%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Barra de progresso de scroll -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Header com menu fixo centralizado (cápsula flutuante) -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Menu principal">
+      <a href="#inicio" class="brand" aria-label="Início">
+        <span class="avatar-mini">SN</span>
+        Gabriel Fernando
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" stroke-linecap="round"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button id="menu-btn" class="menu-btn" aria-label="Abrir menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============== HERO ============== -->
+    <section id="inicio" class="hero">
+      <div class="status-pill reveal">
+        <span class="live-dot" aria-hidden="true"></span>
+        Disponível para novos projetos
+      </div>
+
+      <div class="hero-section-container">
+        <div>
+          <h1 class="reveal">
+            Olá, me chamo <span class="em">Gabriel Fernando</span>.<br />
+            Sou Analista de Redes &amp; Programador.
+          </h1>
+
+          <p class="hero-sub reveal">
+            Atuo em ambiente <strong>multinacional</strong> unindo desenvolvimento,
+            redes e infraestrutura. Aqui é onde mostro o que tenho construído.
+          </p>
+        </div>
+
+        <img class="hero-avatar-image" src="./images/Avatar-logo.jpeg" alt="Gabriel Fernando">
+      </div>
+
+      <div class="hero-cta reveal">
+        <a href="#portfolio" class="btn btn-primary">
+          Ver projetos <span class="arrow">→</span>
+        </a>
+        <a href="#contato" class="btn">Falar comigo</a>
+
+        <div class="hero-socials">
+          <a href="https://github.com/GabrielFernandoS" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38v-1.33c-2.22.48-2.69-1.07-2.69-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.81.06 1.23.83 1.23.83.72 1.23 1.88.88 2.34.67.07-.52.28-.88.51-1.08-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82a7.6 7.6 0 014 0c1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.74.54 1.49v2.21c0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-fernando-387b392a6/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18.34V10.4H5.67v7.94h2.67zM7.01 9.24c.86 0 1.55-.7 1.55-1.55a1.55 1.55 0 10-3.1 0c0 .85.69 1.55 1.55 1.55zm11.33 9.1V14c0-2.32-.5-4.1-3.21-4.1-1.3 0-2.18.71-2.54 1.39h-.04V10.4h-2.56v7.94h2.67v-3.93c0-1.04.2-2.04 1.48-2.04 1.27 0 1.29 1.18 1.29 2.1v3.87h2.91z"/></svg>
+          </a>
+          <a href="mailto:gabrielfernandoso15@gmail.com" aria-label="E-mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l9 6 9-6M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M3 7a2 2 0 012-2h14a2 2 0 012 2" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== 01 SOBRE — Bento Grid ============== -->
+    <section id="sobre">
+      <div class="section-header reveal">
+        <span class="num">01</span>
+        <h2>Sobre mim</h2>
+      </div>
+
+      <div class="bento reveal">
+        <!-- Card grande: introdução -->
+        <div class="bento-card bento-intro">
+          <span class="label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg>
+            Quem sou eu
+          </span>
+          <h3>Programador que entende de redes — analista que escreve código.</h3>
+          <p>
+            Trabalho na interseção entre <strong style="color:var(--ink)">desenvolvimento</strong>
+            e <strong style="color:var(--ink)">infraestrutura</strong>: dia a dia automatizando rotinas,
+            mantendo serviços críticos e construindo ferramentas internas em uma empresa multinacional.
+          </p>
+        </div>
+
+        <!-- Stack rápido -->
+        <div class="bento-card bento-stack">
+          <span class="label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+            Stack favorito
+          </span>
+          <ul>
+            <li><span class="ico">JS</span> JavaScript</li>
+            <li><span class="ico">Py</span> Python</li>
+            <li><span class="ico">Lx</span> Linux</li>
+            <li><span class="ico">Dk</span> Docker</li>
+            <li><span class="ico">Ne</span> Cisco / Redes</li>
+            <li><span class="ico">N8</span> N8N</li>
+            <li><span class="ico">AI</span> Automação com IA</li>
+          </ul>
+        </div>
+
+        <!-- Localização -->
+        <div class="bento-card bento-location">
+          <span class="label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-7-7-12a7 7 0 0114 0c0 5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            Onde estou
+          </span>
+          <div class="pin">Brasil</div>
+          <div class="sub">Pernambuco - Caruaru</div>
+          <div class="sub">Remoto disponível · UTC−3</div>
+        </div>
+
+        <!-- Atualmente -->
+        <div class="bento-card bento-now">
+          <span class="label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            Agora
+          </span>
+          <div class="what">Analista de Sistemas e Redes</div>
+          <div class="where">Cobra Tecnologia</div>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="bento-card bento-fun">
+          <span class="label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z"/></svg>
+            Fora do trabalho
+          </span>
+          <div class="tags">
+            <span class="tag">Corrida</span>
+            <span class="tag">Filmes</span>
+            <span class="tag">Jiu-Jitsu</span>
+            <span class="tag">Jogos</span>
+            <span class="tag">Leitura</span>
+            <span class="tag">Música</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== 02 FORMAÇÃO ============== -->
+    <section id="formacao">
+      <div class="section-header reveal">
+        <span class="num">02</span>
+        <h2>Formação</h2>
+      </div>
+
+      <div class="formacao-grid">
+        <div class="skills-block reveal">
+          <h3>Educação</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">2024 →</span>
+              <div>
+                <h3>Bacharelado em Ciência da Computação</h3>
+                <p class="place">Uninter · Cursando</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2024</span>
+              <div>
+                <h3>Curso de Tecnologia e Teologia</h3>
+                <p class="place">Projeto Soli Deo Gloria · Concluído</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-block reveal">
+          <h3>Cursos &amp; certificações</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">2023</span>
+              <div>
+                <h3>Curso Web Moderno Completo com JavaScript + Projetos</h3>
+                <p class="place">89h · online</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2024</span>
+              <div>
+                <h3>React - The Complete Guide (incl. Next.js, Redux)</h3>
+                <p class="place">71,5h · online</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2023</span>
+              <div>
+                <h3>Conceitos Básicos de Redes - Cisco</h3>
+                <p class="place">online</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-block reveal">
+          <h3>Idiomas</h3>
+          <ul class="lang-list">
+            <li>
+              <div class="row"><span class="name">Português</span><span class="level">Nativo</span></div>
+              <div class="bar"><i style="width:100%"></i></div>
+            </li>
+            <li>
+              <div class="row"><span class="name">Inglês</span><span class="level">Intermediário</span></div>
+              <div class="bar"><i style="width:65%"></i></div>
+            </li>
+            <li>
+              <div class="row"><span class="name">Espanhol</span><span class="level">Básico</span></div>
+              <div class="bar"><i style="width:30%"></i></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skills-block reveal">
+          <h3>Tecnologias &amp; ferramentas</h3>
+          <div class="skill-pills">
+            <span class="pill">JavaScript</span>
+            <span class="pill">Python</span>
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Git</span>
+            <span class="pill">Linux</span>
+            <span class="pill">Docker</span>
+            <span class="pill">TCP/IP</span>
+            <span class="pill">Cisco</span>
+            <span class="pill">Active Directory</span>
+            <span class="pill">Windows Server</span>
+            <span class="pill">React</span>
+            <span class="pill">Java</span>
+            <span class="pill">N8n</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== 03 PROJETOS ============== -->
+    <section id="portfolio">
+      <div class="section-header reveal">
+        <span class="num">03</span>
+        <h2>Projetos</h2>
+      </div>
+
+      <div class="projects reveal">
+
+        <article class="project">
+          <div class="project-thumb" style="--thumb-c1: oklch(0.85 0.1 265); --thumb-c2: oklch(0.88 0.08 320);">
+            <img class="glyph" src="/images/Projeto-Portfolio.png" alt="Psss">
+          </div>
+          <div class="project-head">
+            <span class="cat">Web</span>
+            <span class="year">2026</span>
+          </div>
+          <h3>Portfólio Pessoal</h3>
+          <p>Site single-page em HTML, CSS e JavaScript puro, com tema claro/escuro e formulário validado.</p>
+          <div class="project-foot">
+            <div class="project-stack"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <a href="#" class="project-link">GitHub <span class="arrow">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-thumb" style="--thumb-c1: oklch(0.88 0.1 145); --thumb-c2: oklch(0.86 0.08 195);">
+            <img class="glyph" src="/images/Projeto-Finance.png" alt="Sistema de Finanças">
+          </div>
+          <div class="project-head">
+            <span class="cat">SaaS</span>
+            <span class="year">2026</span>
+          </div>
+          <h3>Sistema de Finanças Empresarial</h3>
+          <p>Sistema moderno para gestão financeira de empresas, com funcionalidades de controle de fluxo de caixa, relatórios e integração com sistemas contábeis. Feito em TypeScript e Supabase para armazenamento de dados.</p>
+          <div class="project-foot">
+            <div class="project-stack"><span>TypeScript</span><span>Supabase</span></div>
+            <a href="#" class="project-link">GitHub <span class="arrow">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-thumb" style="--thumb-c1: oklch(0.86 0.1 30); --thumb-c2: oklch(0.88 0.08 65);">
+            <img class="glyph" src="/images/Projeto-Agendamento.png" alt="Agendamento de Serviços">
+          </div>
+          <div class="project-head">
+            <span class="cat">AI</span>
+            <span class="year">2026</span>
+          </div>
+          <h3>Agendamento de Serviços automatizados</h3>
+          <p>Aplicação web para agendamento e gerenciamento de serviços automatizados para barbearias, com interface intuitiva e integração com sistemas de agendamento existentes integrado no whatsapp.</p>
+          <div class="project-foot">
+            <div class="project-stack"><span>React</span><span>N8N</span></div>
+            <a href="#" class="project-link">GitHub <span class="arrow">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============== 04 CONTATO ============== -->
+    <section id="contato">
+      <div class="section-header reveal">
+        <span class="num">04</span>
+        <h2>Contato</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Vamos conversar</h3>
+          <p>
+            Aberto a oportunidades, freelas e troca de ideias sobre desenvolvimento,
+            redes e automação. Respondo em até dois dias úteis.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="label">E-mail</span>
+              <a href="mailto:gabrielfernandoso15@gmail.com"><span class="__cf_email__" data-cfemail="324157471c575f535b5e72565d5f5b5c5b5d1c515d5f">gabrielfernandoso15@gmail.com</span> <span class="arrow">↗</span></a>
+            </li>
+            <li>
+              <span class="label">GitHub</span>
+              <a href="https://github.com/GabrielFernandoS" target="_blank" rel="noopener">/GabrielFernandoS <span class="arrow">↗</span></a>
+            </li>
+            <li>
+              <span class="label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/gabriel-fernando-387b392a6/" target="_blank" rel="noopener">/in/gabriel-fernando <span class="arrow">↗</span></a>
+            </li>
+            <li>
+              <span class="label">Localização</span>
+              <span>Brasil - PE - Caruaru · Remoto</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formulário com validação JS (requisito do trabalho) -->
+        <form class="form reveal" id="contact-form" novalidate>
+          <h3>Envie uma mensagem</h3>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Gabriel Fernando" />
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@dominio.com" />
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sobre o que você quer falar?"></textarea>
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Enviar mensagem <span class="arrow">→</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> Gabriel Fernando · Feito com HTML, CSS &amp; JS puro
+  </footer>
+
+  <!-- Modal de confirmação -->
+  <div class="modal-backdrop" id="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <div class="check" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.4">
+          <path d="M5 12.5l5 5L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3 id="modal-title">Mensagem enviada!</h3>
+      <p>Obrigado pelo contato. Vou te responder em breve.</p>
+      <button id="modal-close" class="btn btn-primary">Fechar</button>
+    </div>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
