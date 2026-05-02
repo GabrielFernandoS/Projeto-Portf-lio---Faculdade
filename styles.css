@@ -881,4 +881,20 @@ section {
   .contact-grid { grid-template-columns: 1fr; }
   .timeline-item { grid-template-columns: 1fr; gap: 4px; }
   .timeline-item .year { padding-top: 0; }
+
+   
+  .hero-section-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-avatar-image {
+    height: 160px;
+    width: 160px;
+    border-radius: 999px;
+  }
+
+  .hero-sub {
+    margin-top: 20px;
+  }
 }
